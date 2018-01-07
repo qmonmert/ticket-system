@@ -147,6 +147,12 @@
       "root": "libs/backend/src",
       "test": "../../../test.js",
       "appRoot": ""
+    },
+    {
+      "name": "profile-settings-ui",
+      "root": "libs/profile-settings-ui/src",
+      "test": "../../../test.js",
+      "appRoot": ""
     }
   ]
 }
