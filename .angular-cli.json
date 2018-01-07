@@ -22,6 +22,14 @@
     {
       "project": "apps/customer-portal/e2e/tsconfig.e2e.json",
       "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/agent-workdesk/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/agent-workdesk/e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
     }
   ],
   "test": {
@@ -45,6 +53,31 @@
     "typescriptMismatch": false
   },
   "apps": [
+    {
+      "name": "agent-workdesk",
+      "root": "apps/agent-workdesk/src",
+      "outDir": "dist/apps/agent-workdesk",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "../../../test.js",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "../../../tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
     {
       "name": "customer-portal",
       "root": "apps/customer-portal/src",
