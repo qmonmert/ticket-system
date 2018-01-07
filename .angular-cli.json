@@ -161,6 +161,12 @@
       "appRoot": ""
     },
     {
+      "name": "reporting/ui/stat-dashboard-ui",
+      "root": "libs/reporting/ui/stat-dashboard-ui/src",
+      "test": "../../../../../test.js",
+      "appRoot": ""
+    },
+    {
       "name": "ticket-list-ui",
       "root": "libs/ticket-list-ui/src",
       "test": "../../../test.js",
