@@ -137,6 +137,12 @@
       }
     },
     {
+      "name": "account-ui",
+      "root": "libs/account-ui/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
       "name": "backend",
       "root": "libs/backend/src",
       "test": "../../../test.js",
