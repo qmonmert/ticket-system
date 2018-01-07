@@ -22,7 +22,10 @@
     "format:write": "node ./node_modules/@nrwl/schematics/src/command-line/format.js write",
     "format:check": "node ./node_modules/@nrwl/schematics/src/command-line/format.js check",
 
-    "nx-migrate": "node ./node_modules/@nrwl/schematics/src/command-line/nx-migrate.js"
+    "nx-migrate": "node ./node_modules/@nrwl/schematics/src/command-line/nx-migrate.js",
+
+    "agent-workdesk": "ng serve -a=agent-workdesk -p=4200",
+    "customer-portal": "ng serve -a=customer-portal -p=4201"
   },
   "private": true,
   "dependencies": {
