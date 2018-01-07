@@ -42,3 +42,35 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Commands
+
+npm i -g @nrwl/schematics
+npm i -g @angular/cli
+
+create-nx-workspace support-ticket-suite --directory=ticket-system --npm-scope=suite
+
+cd ticket-system
+
+ng g app customer-portal
+ng g app agent-workdesk --routing
+ng g app stat-tracker --directory=reporting
+
+ng g lib backend
+ng g service ticket -a=backend
+
+ng g lib account-ui --routing
+
+ng g lib profile-settings-ui --routing --parent-module=apps/agent-workdesk/src/app/app.module.ts
+ng g lib ticket-list-ui --routing --lazy --parent-module=apps/agent-workdesk/src/app/app.module.ts
+ng g lib formatters --nomodule
+ng g lib stat-dashboard-ui --directory=reporting/ui 
+
+ng serve -a=agent-workdesk
+ng serve -a=customer-portal -p=4201
+
+npm run agent-workdesk
+npm run customer-portal
+
+ng build --prod -a=agent-workdesk
+ng build --prod -a=customer-portal
