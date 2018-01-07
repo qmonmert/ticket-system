@@ -9,9 +9,15 @@ import { profileSettingsUiRoutes } from '@suite/profile-settings-ui';
   imports: [
     BrowserModule,
     NxModule.forRoot(),
-    RouterModule.forRoot([{ path: 'profile-settings-ui', children: profileSettingsUiRoutes }], {
-      initialNavigation: 'enabled'
-    })
+    RouterModule.forRoot(
+      [
+        { path: 'profile-settings-ui', children: profileSettingsUiRoutes },
+        { path: 'ticket-list-ui', loadChildren: '@suite/ticket-list-ui#TicketListUiModule' }
+      ],
+      {
+        initialNavigation: 'enabled'
+      }
+    )
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent]

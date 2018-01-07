@@ -153,6 +153,12 @@
       "root": "libs/profile-settings-ui/src",
       "test": "../../../test.js",
       "appRoot": ""
+    },
+    {
+      "name": "ticket-list-ui",
+      "root": "libs/ticket-list-ui/src",
+      "test": "../../../test.js",
+      "appRoot": ""
     }
   ]
 }
